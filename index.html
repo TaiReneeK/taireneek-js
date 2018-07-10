@@ -7,7 +7,7 @@
 
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<div class="grid-container">
@@ -24,22 +24,55 @@
 			</ul>
 			</nav>
   		</div>
-  		<div class="grid-item about">
-  			<img id="aboutImage" src="./images/profileimage.jpg">
+
+  		<div class="grid-item slideshow" id="slider">
+          <div id="slider-frame">
+            
+            <div id="slider-prev">PREV</div>
+            <div id="slider-next">NEXT</div>
+
+            <div id="slider-images">
+              <div data-src="./images/profileimage.jpg">
+                This is me!
+              </div>
+              <div data-src="./images/aunt.jpg">
+                I am a proud aunt.
+              </div>
+              <div data-src="./images/graduation.jpg">
+                My high school graduation...feels like yesterday.
+              </div>
+              <div data-src="./images/foodbank.jpg">
+                I love to give back.
+              </div>
+              <div data-src="./images/outdoors.jpg">
+                I love the mountains!
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="slider-caption">
+            The caption.
+          </div>
+        </div>
+
   			<h2 id="aboutTitle">About Me</h2>
 				<p>
 				Hello Everyone my name is Tai-Renee King and I am a software developer and this is my website that I designed. A little bit about me. I love plants, non-fiction books, being vegan, and computer science (of course). I plan to use my knowledge to help improve my community and the world around me. I want to be a positive influence for the next generations to come and lead the charge against ignorance.
 				</p>
   		</div>
+    </div>
   		<div class="grid-item project">
   			<h4 id="projectTitle">Virtual Pets Amok</h4>
   			
         <a href="https://github.com/TaiReneeK/virtual-pets-amok">
            <img id="projectImage" src="./images/petsamok.jpg">
         </a>
+        <button class="collapsible">Description</button>
+        <div class="content">
   			<p>
   				With this app you can adopt, admit, and take care of different types of pets from cats &amp; dogs to robotic cats and robotic dogs!
   			</p>
+      </div>
   		</div>
 
   		<div class="grid-item project">
@@ -72,5 +105,13 @@
     			</div>
   		</div>
   	</div>
+
+    <script src="./js/app.js"></script>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
