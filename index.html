@@ -1,110 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tai-Renee's Portfolio</title>
+  <title>Tai-Renee's Portfolio</title>
 
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
 
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<div class="grid-container">
-  		<div class="grid-item header">
-  			<h2 id="logo">Tai-Renee King</h2>
-  			<h3 id="position">Software Developer</h3>
-  		</div>
-  		<div class="grid-item nav">
-  			<nav>
-			<ul>
-				<li><a href="#aboutTitle">About</a></li>
-				<li><a href="#projectTitle">Projects</a></li>
-				<li><a href="#contactMe">Contact</a></li>
-			</ul>
-			</nav>
-  		</div>
+  <div class="grid-container">
+      <div class="grid-item header">
+        <h2 id="logo">Tai-Renee King</h2>
+        <h3 id="position">Software Developer</h3>
+      </div>
+      <div class="grid-item nav">
+        <nav>
+      <ul>
+        <li><a href="#aboutTitle">About</a></li>
+        <li><a href="#projectTitle">Projects</a></li>
+        <li><a href="#contactMe">Contact</a></li>
+      </ul>
+      </nav>
+      </div>
+      <div class="grid-item about">
+        <div class="slideshow-container">
 
-  		<div class="grid-item slideshow" id="slider">
-          <div id="slider-frame">
-            
-            <div id="slider-prev">PREV</div>
-            <div id="slider-next">NEXT</div>
-
-            <div id="slider-images">
-              <div data-src="./images/profileimage.jpg">
-                This is me!
-              </div>
-              <div data-src="./images/aunt.jpg">
-                I am a proud aunt.
-              </div>
-              <div data-src="./images/graduation.jpg">
-                My high school graduation...feels like yesterday.
-              </div>
-              <div data-src="./images/foodbank.jpg">
-                I love to give back.
-              </div>
-              <div data-src="./images/outdoors.jpg">
-                I love the mountains!
-              </div>
-            </div>
-            </div>
-          </div>
-          <div id="slider-caption">
-            The caption.
-          </div>
+  <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <img src="./images/profileimage.jpg" style="width:100%">
+          <div class="text">Fun Facts About Tai:</div>
         </div>
 
-  			<h2 id="aboutTitle">About Me</h2>
-				<p>
-				Hello Everyone my name is Tai-Renee King and I am a software developer and this is my website that I designed. A little bit about me. I love plants, non-fiction books, being vegan, and computer science (of course). I plan to use my knowledge to help improve my community and the world around me. I want to be a positive influence for the next generations to come and lead the charge against ignorance.
-				</p>
-  		</div>
-    </div>
-  		<div class="grid-item project">
-  			<h4 id="projectTitle">Virtual Pets Amok</h4>
-  			
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <img src="./images/aunt.jpg" style="width:50%">
+          <div class="text">I have a nephew!</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <img src="./images/plants.jpg" style="width:45%">
+          <div class="text">Green thumb like Poison Ivy but a heart of gold.</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 7</div>
+          <img src="./images/books.jpg" style="width:55%">
+          <div class="text">Sharing knowledge</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 7</div>
+          <img src="./images/graduation.jpg" style="width:100%">
+          <div class="text">I'm forever learning</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 7</div>
+          <img src="./images/foodbank.jpg" style="width:85%">
+          <div class="text">I love giving back.</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img src="./images/outdoors.jpg" style="width:75%">
+          <div class="text">I love the mountains!</div>
+        </div>
+
+  <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+<!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+        <h2 id="aboutTitle">About Me</h2>
+        <p>
+          Hello Everyone my name is Tai-Renee King and I am a software developer. A little bit about me: I love plants, non-fiction books, being vegan, and computer science (of course). I plan to use my knowledge to help improve my community and the world around me. I want to be a positive influence for the next generations to come and lead the charge against ignorance.
+        </p>
+      </div>
+      <div class="grid-item project">
+        <h4 id="projectTitle">Virtual Pets Amok</h4>
+        
         <a href="https://github.com/TaiReneeK/virtual-pets-amok">
            <img id="projectImage" src="./images/petsamok.jpg">
         </a>
-        <button class="collapsible">Description</button>
+
+        <button class="collapsible">Summary</button>
         <div class="content">
-  			<p>
-  				With this app you can adopt, admit, and take care of different types of pets from cats &amp; dogs to robotic cats and robotic dogs!
-  			</p>
+        <p>
+          With this app you can adopt, admit, and take care of different types of pets from cats &amp; dogs to robotic cats and robotic dogs!
+        </p>
       </div>
-  		</div>
+      </div>
 
-  		<div class="grid-item project">
-  			<h4 id="projectTitle">Hospital Application</h4>
+      <div class="grid-item project">
+        <h4 id="projectTitle">Hospital Application</h4>
         <a href="https://github.com/TaiReneeK/hospital">
-  			   <img id="projectImage" src="./images/hospital.jpg">
+           <img id="projectImage" src="./images/hospital.jpg">
         </a>
-  			<p>
-				Right now, this hospital app will be able to hire and fire typical hospital employees and also provide care for patients. The more advanced features will be coming soon!
-			</p>
-  		</div>
 
-  		<div class="grid-item project">
-  			<h4 id="projectTitle">Fortune Teller Application</h4>
+        <button class="collapsible">Summary</button>
+        <div class="content">
+        <p>
+        Right now, this hospital app will be able to hire and fire typical hospital employees and also provide care for patients. The more advanced features will be coming soon!
+      </p>
+      </div>
+      </div>
+
+      <div class="grid-item project">
+        <h4 id="projectTitle">Fortune Teller Application</h4>
         <a href="https://github.com/TaiReneeK/fortune-teller">
-  			   <img id="projectImage" src="./images/fortuneteller.jpg" >
+           <img id="projectImage" src="./images/fortuneteller.jpg" >
         </a>
-  			<p>
-				My fortune teller app takes simple user input and reveal their bee resemblance, tree relative, and ideal flower.
-			</p>
-  		</div>
-  		<div class="grid-item text">*More projects available on GitHub</div>
-  			<div class="grid-item footer">
-  				<div class= "social">
-      			<a href="https://www.linkedin.com/in/tai-renee-king" class="fa fa-linkedin"></a>
-      			<a href="https://github.com/TaiReneeK" class="fa fa-github"></a>
-      			<a href="https://www.instagram.com/ohtai/" class="fa fa-instagram" class="fa fa-instagram"></a>
-      			<a href="https://www.youtube.com/channel/UCMpI2uNb6w0Wxmev_SG9nKA/featured?view_as=public" class="fa fa-youtube"></a>
-      			<a href="https://www.snapchat.com/add/ohtai" class="fa fa-snapchat-ghost"></a>
-    			</div>
-  		</div>
-  	</div>
+
+        <button class="collapsible">Summary</button>
+        <div class="content">
+        <p>
+        My fortune teller app takes simple user input and reveal their bee resemblance, tree relative, and ideal flower.
+        </p>
+        </div>
+      </div>
+
+     <!-- <div class="grid-item text">More projects available on GitHub</div> -->
+        <div class="grid-item footer">
+          <div class= "social">
+            <a href="https://www.linkedin.com/in/tai-renee-king" class="fa fa-linkedin"></a>
+            <a href="https://github.com/TaiReneeK" class="fa fa-github"></a>
+            <a href="https://www.instagram.com/ohtai/" class="fa fa-instagram" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCMpI2uNb6w0Wxmev_SG9nKA/featured?view_as=public" class="fa fa-youtube"></a>
+            <a href="https://www.snapchat.com/add/ohtai" class="fa fa-snapchat-ghost"></a>
+          </div>
+      </div>
+    </div>
 
     <script src="./js/app.js"></script>
 
