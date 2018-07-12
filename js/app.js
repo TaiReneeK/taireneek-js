@@ -1,14 +1,16 @@
 const projects = document.querySelectorAll('.project');
 
-for(let i=0; i<projects.length; i++){
+for(let i=0; i<projects.length; i++)
+{
   let button = projects[i].querySelector('button');
   let para = projects[i].querySelector('p');
   
-  button.addEventListener('click', function(){
+  button.addEventListener('click', function()
+  {
     projects[i].classList.toggle('expanded');
     button.innerHTML = projects[i].classList.contains('expanded') ?
       'Hide Details' : 'Show Details';
- });
+  });
 }
 
 var slideIndex = 1;
@@ -41,25 +43,30 @@ function showSlides()
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000);
+    setTimeout(showSlides, 4000);
 }
 
- //    var coll = document.getElementsByClassName("collapsible");
-	// var i;
+var modal = document.getElementById('myModal');
 
-	// for (i = 0; i < coll.length; i++) 
-	// {
- //  	coll[i].addEventListener("click", function() 
- //  	{
- //    this.classList.toggle("active");
- //    var content = this.nextElementSibling;
- //    if (content.style.display === "block") 
- //    	{
- //      content.style.display = "none";
- //    	} 
-	// else 
-	// 	{
- //      content.style.display = "block";
- //    	}
- //  	});
-	// }
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
